@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>株式会社琴線 | 鳥取発 — 心に響く未来を、ともに</title>
+  <meta name="description" content="鳥取発の株式会社琴線。AI活用・教育・イベントを軸に、一人ひとりの可能性を引き出し、地域から全国へ新しい価値を届けます。">
+  <meta property="og:title" content="株式会社琴線 | 鳥取発 — 心に響く未来を、ともに">
+  <meta property="og:description" content="鳥取発の株式会社琴線。AI活用・教育・イベントを軸に、一人ひとりの可能性を引き出し、地域から全国へ新しい価値を届けます。">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://www.by-kinsen.com">
+  <meta property="og:site_name" content="株式会社琴線">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="canonical" href="https://www.by-kinsen.com">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@300;400;500;600;700&family=Noto+Sans+JP:wght@300;400;500;600;700&family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Loading Screen -->
+  <div class="loader" id="loader">
+    <div class="loader-inner">
+      <div class="loader-logo">
+        <svg width="60" height="60" viewBox="0 0 60 60" fill="none">
+          <circle cx="30" cy="30" r="28" stroke="url(#loaderGrad)" stroke-width="1.5" stroke-dasharray="6 4" class="loader-ring"/>
+          <defs><linearGradient id="loaderGrad" x1="0" y1="0" x2="60" y2="60"><stop stop-color="#8B6914"/><stop offset="1" stop-color="#C9A96E"/></linearGradient></defs>
+        </svg>
+      </div>
+      <div class="loader-text">琴 線</div>
+      <div class="loader-bar"><div class="loader-bar-fill"></div></div>
+    </div>
+  </div>
+
+  <!-- Scroll Progress -->
+  <div class="scroll-progress" id="scrollProgress"></div>
+
+  <!-- Navigation -->
+  <header class="nav-header" id="navHeader">
+    <div class="nav-inner">
+      <a href="#hero" class="nav-logo">株式会社 琴線</a>
+      <nav class="nav-links" id="navLinks">
+        <a href="#hero" class="nav-link">Top</a>
+        <a href="#philosophy" class="nav-link">理念</a>
+        <a href="#services" class="nav-link">事業内容</a>
+        <a href="#company" class="nav-link">会社情報</a>
+        <a href="#news" class="nav-link">お知らせ</a>
+        <a href="#contact" class="nav-link nav-link-cta">
+          <span>お問い合わせ</span>
+          <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </a>
+      </nav>
+      <button class="nav-hamburger" id="navHamburger" aria-label="メニュー">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Hero — Photo Slider -->
+  <section class="hero" id="hero">
+    <!-- Slider backgrounds -->
+    <div class="hero-slider" id="heroSlider">
+      <div class="hero-slide active">
+        <img src="https://images.unsplash.com/photo-1674388277160-46d989067e4d?w=1920&q=80" alt="大山（だいせん）— 鳥取のシンボル、雪化粧の雄大な山" loading="eager">
+      </div>
+      <div class="hero-slide">
+        <img src="https://images.unsplash.com/photo-1574767514399-a58e0120d1d2?w=1920&q=80" alt="鳥取砂丘 — 砂漠と海が出会う絶景" loading="eager">
+      </div>
+      <div class="hero-slide">
+        <img src="https://images.unsplash.com/photo-1702973258145-f0a08f461c26?w=1920&q=80" alt="鳥取砂丘 — 広大な砂の大地を歩く" loading="lazy">
+      </div>
+      <div class="hero-slide">
+        <img src="https://images.unsplash.com/photo-1753793786884-0ac3ed156347?w=1920&q=80" alt="鳥取の海岸線 — 緑と青い海のコントラスト" loading="lazy">
+      </div>
+      <div class="hero-slide">
+        <img src="https://images.unsplash.com/photo-1578310894287-b6c8f0a9a815?w=1920&q=80" alt="鳥取の岩場と海 — 美しい山陰海岸" loading="lazy">
+      </div>
+    </div>
+    <div class="hero-overlay"></div>
+
+    <!-- Content -->
+    <div class="hero-content">
+      <p class="hero-sub" data-animate="fade-up">株式会社 琴線 — 鳥取発</p>
+      <h1 class="hero-title" data-animate="fade-up" data-delay="200">
+        <span class="hero-title-line">心に響く未来を、</span>
+        <span class="hero-title-line hero-title-accent">ともに。</span>
+      </h1>
+      <p class="hero-desc" data-animate="fade-up" data-delay="400">
+        人材・AI・教育の3つの領域で、<br>
+        一人ひとりの可能性を引き出し、<br>
+        地域から全国へ新しい価値を届けます。
+      </p>
+      <div class="hero-actions" data-animate="fade-up" data-delay="600">
+        <a href="#services" class="btn-primary">
+          <span>事業内容を見る</span>
+          <svg width="18" height="18" viewBox="0 0 18 18" fill="none"><path d="M4 9h10M10 5l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </a>
+        <a href="#contact" class="btn-ghost">
+          <span>お問い合わせ</span>
+        </a>
+      </div>
+    </div>
+
+    <!-- Slider dots -->
+    <div class="hero-dots" id="heroDots">
+      <button class="hero-dot active" data-slide="0" aria-label="スライド1"></button>
+      <button class="hero-dot" data-slide="1" aria-label="スライド2"></button>
+      <button class="hero-dot" data-slide="2" aria-label="スライド3"></button>
+      <button class="hero-dot" data-slide="3" aria-label="スライド4"></button>
+      <button class="hero-dot" data-slide="4" aria-label="スライド5"></button>
+    </div>
+
+    <!-- Scroll indicator -->
+    <div class="hero-scroll">
+      <span>Scroll</span>
+      <div class="hero-scroll-line"></div>
+    </div>
+
+    <!-- Wave transition -->
+    <div class="hero-wave">
+      <svg viewBox="0 0 1440 120" preserveAspectRatio="none">
+        <path d="M0,60 C240,120 480,0 720,60 C960,120 1200,0 1440,60 L1440,120 L0,120Z" fill="var(--bg)"/>
+      </svg>
+    </div>
+  </section>
+
+  <!-- Marquee -->
+  <div class="marquee-section">
+    <div class="marquee-track">
+      <div class="marquee-content">
+        <span>HUMAN RESOURCES</span><span class="marquee-dot"></span>
+        <span>AI SOLUTIONS</span><span class="marquee-dot"></span>
+        <span>EDUCATION</span><span class="marquee-dot"></span>
+        <span>KINSEN</span><span class="marquee-dot"></span>
+        <span>TOTTORI</span><span class="marquee-dot"></span>
+        <span>HUMAN RESOURCES</span><span class="marquee-dot"></span>
+        <span>AI SOLUTIONS</span><span class="marquee-dot"></span>
+        <span>EDUCATION</span><span class="marquee-dot"></span>
+        <span>KINSEN</span><span class="marquee-dot"></span>
+        <span>TOTTORI</span><span class="marquee-dot"></span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Philosophy -->
+  <section class="section" id="philosophy">
+    <div class="container">
+      <div class="philosophy-grid">
+        <div class="philosophy-text" data-animate="fade-up">
+          <div class="section-label">
+            <span class="section-label-line"></span>
+            <span>Philosophy</span>
+          </div>
+          <h2 class="section-heading">
+            『琴線に触れる』<br>
+            <span class="text-gradient">仕事を通じて。</span>
+          </h2>
+          <p class="philosophy-desc">
+            「琴線」とは、人の心の奥深くに宿る、秘められた想いと情熱を意味します。
+          </p>
+          <p class="philosophy-desc">
+            私たちは、その琴線に触れる仕事を通じて、人々の心に響き、共感を広げ、未来を動かしていきます。
+          </p>
+          <div class="philosophy-values">
+            <div class="philosophy-value">
+              <div class="philosophy-value-icon">&#10003;</div>
+              <p>一人ひとりの想いに向き合い、心を震わせ、共に歩む。</p>
+            </div>
+            <div class="philosophy-value">
+              <div class="philosophy-value-icon">&#10003;</div>
+              <p>成果を超えて、心を動かす。</p>
+            </div>
+            <div class="philosophy-value">
+              <div class="philosophy-value-icon">&#10003;</div>
+              <p>数字を超えて、共感を生み出す。</p>
+            </div>
+          </div>
+          <p class="philosophy-desc" style="margin-top:24px;">
+            人を結び、地域を結び、社会を動かす原動力に。<br>
+            私たちはその可能性を信じています。
+          </p>
+        </div>
+        <div class="philosophy-visual" data-animate="fade-up" data-delay="200">
+          <div class="philosophy-card">
+            <div class="philosophy-card-inner">
+              <span class="philosophy-card-kanji">琴</span>
+              <span class="philosophy-card-kanji">線</span>
+            </div>
+            <p class="philosophy-card-caption">心の奥深くに宿る、秘められた想いと情熱</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services -->
+  <section class="section section-alt" id="services">
+    <div class="container">
+      <div class="section-label text-center" data-animate="fade-up">
+        <span class="section-label-line"></span>
+        <span>Services</span>
+      </div>
+      <h2 class="section-heading text-center" data-animate="fade-up">
+        3つの領域で、<span class="text-gradient">課題に応える。</span>
+      </h2>
+      <p class="section-sub text-center" data-animate="fade-up">
+        「どこから始めれば…？」という段階から、琴線は伴走します。<br>
+        人材・AI・教育までを一気通貫で。
+      </p>
+      <div class="service-grid">
+        <div class="service-card" data-animate="fade-up" data-delay="0">
+          <div class="service-card-glow service-glow-gold"></div>
+          <div class="service-num">01</div>
+          <h3>人材</h3>
+          <p>企業と人の可能性をつなぎ、最適なマッチングを実現します。採用から定着・活躍まで、一貫して支援します。</p>
+          <ul class="service-list">
+            <li>人材紹介</li>
+            <li>RPO（採用代行）</li>
+            <li>キャリア支援・定着支援</li>
+          </ul>
+        </div>
+        <div class="service-card" data-animate="fade-up" data-delay="100">
+          <div class="service-card-glow service-glow-blue"></div>
+          <div class="service-num">02</div>
+          <h3>AI</h3>
+          <p>AI技術を活用し、新たな価値創造を支援します。企業課題に寄り添ったソリューションを提供します。</p>
+          <ul class="service-list">
+            <li>AI導入支援</li>
+            <li>データ分析</li>
+            <li>AIチャットボット</li>
+          </ul>
+        </div>
+        <div class="service-card" data-animate="fade-up" data-delay="200">
+          <div class="service-card-glow service-glow-green"></div>
+          <div class="service-num">03</div>
+          <h3>教育</h3>
+          <p>人と組織の成長にフォーカスした教育サービスを提供します。知識習得だけでなく、挑戦の場も創出します。</p>
+          <ul class="service-list">
+            <li>多様な研修プログラム</li>
+            <li>実務直結セミナー</li>
+            <li>キャリア開発支援</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Why Kinsen -->
+  <section class="section" id="why">
+    <div class="container">
+      <div class="section-label text-center" data-animate="fade-up">
+        <span class="section-label-line"></span>
+        <span>Why Kinsen</span>
+      </div>
+      <h2 class="section-heading text-center" data-animate="fade-up">
+        <span class="text-gradient">選ばれる理由</span>
+      </h2>
+      <div class="why-grid">
+        <div class="why-item" data-animate="fade-up" data-delay="0">
+          <div class="why-num">01</div>
+          <h3>地域密着 × 全国展開</h3>
+          <p>鳥取を拠点に、地方の課題を知り尽くした上で、全国の企業に対して価値を提供します。</p>
+        </div>
+        <div class="why-item" data-animate="fade-up" data-delay="100">
+          <div class="why-num">02</div>
+          <h3>3領域の一気通貫</h3>
+          <p>人材・AI・教育を横断的にカバー。それぞれの課題が絡み合う現場に、ワンストップで対応します。</p>
+        </div>
+        <div class="why-item" data-animate="fade-up" data-delay="200">
+          <div class="why-num">03</div>
+          <h3>心に寄り添う伴走型</h3>
+          <p>単なる業務委託ではなく、クライアントの想いに深く共感し、共に歩むパートナーであり続けます。</p>
+        </div>
+        <div class="why-item" data-animate="fade-up" data-delay="300">
+          <div class="why-num">04</div>
+          <h3>挑戦を後押しする文化</h3>
+          <p>「まずやってみる」精神で、新しい取り組みに積極的にチャレンジ。変化を恐れない組織文化を共に創ります。</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Company Info -->
+  <section class="section section-alt" id="company">
+    <div class="container">
+      <div class="section-label text-center" data-animate="fade-up">
+        <span class="section-label-line"></span>
+        <span>Company</span>
+      </div>
+      <h2 class="section-heading text-center" data-animate="fade-up">
+        <span class="text-gradient">会社情報</span>
+      </h2>
+      <div class="company-table-wrap" data-animate="fade-up" data-delay="100">
+        <table class="company-table">
+          <tbody>
+            <tr><th>会社名</th><td>株式会社琴線</td></tr>
+            <tr><th>所在地</th><td>〒680-0945 鳥取県鳥取市湖山町南1丁目230番地</td></tr>
+            <tr><th>電話番号</th><td>0857-77-3321</td></tr>
+            <tr><th>メール</th><td>office@kinsen-info.com</td></tr>
+            <tr><th>事業内容</th><td>人材紹介・RPO / AI導入支援 / 教育・研修事業 / イベント企画</td></tr>
+            <tr><th>URL</th><td><a href="https://www.by-kinsen.com" target="_blank" rel="noopener">https://www.by-kinsen.com</a></td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <!-- News -->
+  <section class="section" id="news">
+    <div class="container">
+      <div class="section-label text-center" data-animate="fade-up">
+        <span class="section-label-line"></span>
+        <span>News</span>
+      </div>
+      <h2 class="section-heading text-center" data-animate="fade-up">
+        <span class="text-gradient">お知らせ</span>
+      </h2>
+      <div class="news-list" data-animate="fade-up" data-delay="100">
+        <div class="news-item">
+          <span class="news-date">2026.03.17</span>
+          <span class="news-text">コーポレートサイトをリニューアルしました。</span>
+        </div>
+        <div class="news-item">
+          <span class="news-date">2025.12.01</span>
+          <span class="news-text">AI活用セミナーを鳥取市内にて開催しました。</span>
+        </div>
+        <div class="news-item">
+          <span class="news-date">2025.09.15</span>
+          <span class="news-text">人材紹介サービスを開始しました。</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="section" id="contact">
+    <div class="container">
+      <div class="cta-box" data-animate="fade-up">
+        <div class="cta-bg">
+          <div class="cta-orb cta-orb-1"></div>
+          <div class="cta-orb cta-orb-2"></div>
+        </div>
+        <div class="cta-content">
+          <h2>まずはお気軽に<br><span class="text-gradient">ご相談ください。</span></h2>
+          <p>人材・AI・教育、どの領域からでも構いません。<br>貴社の課題に最適なソリューションをご提案します。</p>
+          <div class="cta-actions">
+            <a href="mailto:office@kinsen-info.com" class="btn-primary btn-large">
+              <span>お問い合わせ</span>
+              <svg width="18" height="18" viewBox="0 0 18 18" fill="none"><path d="M4 9h10M10 5l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </a>
+          </div>
+          <div class="cta-info">
+            <div class="cta-info-item">
+              <svg width="18" height="18" viewBox="0 0 18 18" fill="none"><path d="M3 3h12a1.5 1.5 0 011.5 1.5v9A1.5 1.5 0 0115 15H3a1.5 1.5 0 01-1.5-1.5v-9A1.5 1.5 0 013 3z" stroke="currentColor" stroke-width="1.2"/><path d="M16.5 4.5L9 10.5 1.5 4.5" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              <span>office@kinsen-info.com</span>
+            </div>
+            <div class="cta-info-item">
+              <svg width="18" height="18" viewBox="0 0 18 18" fill="none"><path d="M16.5 12.69v2.25a1.5 1.5 0 01-1.635 1.5 14.843 14.843 0 01-6.472-2.302 14.625 14.625 0 01-4.5-4.5A14.843 14.843 0 011.59 3.135 1.5 1.5 0 013.06 1.5h2.25a1.5 1.5 0 011.5 1.29 9.63 9.63 0 00.525 2.11 1.5 1.5 0 01-.337 1.583L5.872 7.608a12 12 0 004.5 4.5l1.125-1.125a1.5 1.5 0 011.583-.338 9.63 9.63 0 002.11.525 1.5 1.5 0 011.31 1.52z" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              <span>0857-77-3321</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <div class="footer-logo">株式会社 琴線</div>
+          <p>心に響く未来を、ともに。</p>
+        </div>
+        <div class="footer-links">
+          <div class="footer-col">
+            <h4>事業内容</h4>
+            <a href="#services">人材</a>
+            <a href="#services">AI</a>
+            <a href="#services">教育</a>
+          </div>
+          <div class="footer-col">
+            <h4>会社情報</h4>
+            <a href="#philosophy">企業理念</a>
+            <a href="#company">会社概要</a>
+            <a href="#contact">お問い合わせ</a>
+          </div>
+          <div class="footer-col">
+            <h4>SNS</h4>
+            <a href="https://www.instagram.com/kinsen_official.jp/" target="_blank" rel="noopener">Instagram</a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2025 株式会社琴線 All Rights Reserved.</p>
+        <a href="#" class="footer-privacy">プライバシーポリシー</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
