@@ -21,7 +21,10 @@
   <!-- Navigation -->
   <header class="nav-header" id="navHeader">
     <div class="nav-inner">
-      <a href="index.html" class="nav-logo">琴線</a>
+      <a href="index.html" class="nav-logo">
+        <img src="kinsen-logo.png" alt="株式会社琴線">
+        <span>株式会社琴線</span>
+      </a>
       <nav class="nav-links" id="navLinks">
         <a href="index.html" class="nav-link active">Top</a>
         <a href="#services" class="nav-link">Service</a>
@@ -110,7 +113,7 @@
         <p class="section-sub">人と企業の可能性をつなぎ、共感と感動を生み出す。</p>
       </div>
       <div class="service-grid">
-        <div class="service-card" data-animate="fade-up" data-delay="0">
+        <div class="service-card" data-animate="fade-up" data-delay="0" data-modal-trigger="modal-hr" role="button" tabindex="0" aria-label="人材紹介の詳細を見る">
           <div class="service-card-image">
             <img
               src="https://plus.unsplash.com/premium_photo-1682091155599-d24e7f752620?w=800&q=80&fit=crop"
@@ -129,9 +132,13 @@
               <li>キャリア支援</li>
               <li>定着支援</li>
             </ul>
+            <span class="service-card-more">
+              詳しく見る
+              <svg width="14" height="14" viewBox="0 0 18 18" fill="none"><path d="M4 9h10M10 5l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </span>
           </div>
         </div>
-        <div class="service-card" data-animate="fade-up" data-delay="100">
+        <div class="service-card" data-animate="fade-up" data-delay="100" data-modal-trigger="modal-rpo" role="button" tabindex="0" aria-label="RPOの詳細を見る">
           <div class="service-card-image">
             <img
               src="https://plus.unsplash.com/premium_photo-1682091173328-a29d905d9081?w=800&q=80&fit=crop"
@@ -150,9 +157,13 @@
               <li>求人設計・媒体運用</li>
               <li>面接調整・内定者フォロー</li>
             </ul>
+            <span class="service-card-more">
+              詳しく見る
+              <svg width="14" height="14" viewBox="0 0 18 18" fill="none"><path d="M4 9h10M10 5l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </span>
           </div>
         </div>
-        <div class="service-card" data-animate="fade-up" data-delay="200">
+        <div class="service-card" data-animate="fade-up" data-delay="200" data-modal-trigger="modal-event" role="button" tabindex="0" aria-label="イベントの詳細を見る">
           <div class="service-card-image">
             <img
               src="event-photo.jpg"
@@ -167,6 +178,10 @@
               <li>交流会・セミナー</li>
               <li>地域活性化イベント</li>
             </ul>
+            <span class="service-card-more">
+              詳しく見る
+              <svg width="14" height="14" viewBox="0 0 18 18" fill="none"><path d="M4 9h10M10 5l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </span>
           </div>
         </div>
       </div>
@@ -278,7 +293,10 @@
     <div class="container">
       <div class="footer-top">
         <div class="footer-brand">
-          <div class="footer-logo">琴線</div>
+          <div class="footer-logo">
+            <img src="kinsen-logo.png" alt="株式会社琴線">
+            <span>株式会社琴線</span>
+          </div>
           <p>琴線に触れる瞬間を、すべての人へ。</p>
         </div>
         <div class="footer-links">
@@ -305,6 +323,221 @@
       </div>
     </div>
   </footer>
+
+  <!-- Service Modals -->
+  <div class="modal-overlay" id="modal-hr" role="dialog" aria-modal="true" aria-labelledby="modal-hr-title">
+    <div class="modal-window">
+      <button type="button" class="modal-close" aria-label="閉じる">&times;</button>
+      <div class="modal-hero">
+        <img src="https://plus.unsplash.com/premium_photo-1682091155599-d24e7f752620?w=1600&q=80&fit=crop" alt="">
+        <div class="modal-hero-text">
+          <span class="modal-label">Service 01</span>
+          <h2 class="modal-title" id="modal-hr-title">人材紹介</h2>
+        </div>
+      </div>
+      <div class="modal-content">
+        <p class="modal-lead">鳥取から、人生の転機をかたちにする。<br>「次の一歩」に、本気で向き合うエージェントです。</p>
+
+        <div class="modal-section">
+          <h3>琴線の人材紹介、3つの強み</h3>
+          <ul class="modal-strength-list">
+            <li><strong>地元を知り尽くした、鳥取拠点ならではのリアルな企業情報。</strong>表に出ない経営者の声・社風・実態まで踏まえてご紹介します。</li>
+            <li><strong>UIターン・関西／首都圏転職にも対応する全国ネットワーク。</strong>「鳥取に帰りたい」「鳥取から都市へ挑戦したい」、どちらの想いにも寄り添います。</li>
+            <li><strong>採用後の定着・活躍まで伴走する、入社後フォロー体制。</strong>3ヶ月・6ヶ月のチェックインで、入社後のミスマッチを未然に防ぎます。</li>
+          </ul>
+        </div>
+
+        <div class="modal-section">
+          <h3>サービスの流れ</h3>
+          <ol class="modal-flow">
+            <li><strong>キャリアカウンセリング</strong>本音と将来像を丁寧にヒアリング。求職者の「琴線」を一緒に探します。</li>
+            <li><strong>求人提案</strong>価値観・スキルにマッチする求人だけを厳選してご紹介。</li>
+            <li><strong>書類・面接対策</strong>通過率を高めるためのレジュメ添削・模擬面接。</li>
+            <li><strong>面接調整・条件交渉</strong>日程調整、条件交渉まで担当エージェントが代行します。</li>
+            <li><strong>内定〜入社決定</strong>退職交渉のサポートまで一貫して伴走します。</li>
+            <li><strong>入社後フォロー</strong>3ヶ月・6ヶ月の定期面談で、定着と活躍を支援。</li>
+          </ol>
+        </div>
+
+        <div class="modal-section">
+          <h3>料金体系（求人企業様）</h3>
+          <div class="modal-price">
+            <ul>
+              <li><strong>求職者：完全無料</strong>（職業安定法に基づく）</li>
+              <li><strong>求人企業：成功報酬制</strong> / 理論年収の 50％ 以内</li>
+              <li><strong>早期退職時の返金保証</strong>：1ヶ月以内 80% ／ 1〜3ヶ月 50% ／ 3〜6ヶ月 10%</li>
+              <li>有料職業紹介事業 許可番号：<strong>31-ユ-300064</strong></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="modal-section">
+          <h3>こんな方におすすめ</h3>
+          <ul class="modal-fit-list">
+            <li>鳥取で、本気のキャリアを築きたい方</li>
+            <li>UIターンを検討中で、信頼できるエージェントを探している方</li>
+            <li>採用に課題を抱える地方企業・成長企業の経営者・人事担当者</li>
+            <li>採用したあとの「定着」までを真剣に考えている企業</li>
+          </ul>
+        </div>
+
+        <div class="modal-cta">
+          <p class="modal-cta-text">まずは無料相談から。お気軽にご相談ください。</p>
+          <a href="contact.html" class="btn-blue btn-large">
+            <span>無料相談を申し込む</span>
+            <svg width="18" height="18" viewBox="0 0 18 18" fill="none"><path d="M4 9h10M10 5l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal-overlay" id="modal-rpo" role="dialog" aria-modal="true" aria-labelledby="modal-rpo-title">
+    <div class="modal-window">
+      <button type="button" class="modal-close" aria-label="閉じる">&times;</button>
+      <div class="modal-hero">
+        <img src="https://plus.unsplash.com/premium_photo-1682091173328-a29d905d9081?w=1600&q=80&fit=crop" alt="">
+        <div class="modal-hero-text">
+          <span class="modal-label">Service 02</span>
+          <h2 class="modal-title" id="modal-rpo-title">RPO（採用代行）</h2>
+        </div>
+      </div>
+      <div class="modal-content">
+        <p class="modal-lead">採用、まるごとお任せください。<br>戦略から実行まで、貴社の採用チームになります。</p>
+
+        <div class="modal-section">
+          <h3>琴線のRPO、3つの強み</h3>
+          <ul class="modal-strength-list">
+            <li><strong>媒体運用・スカウト・面接調整・内定者フォローまでワンストップ。</strong>採用業務の「ばらつき」を解消し、社内リソースを本来の業務に集中させます。</li>
+            <li><strong>AI × プロ採用担当のハイブリッド運用で、スピードと質を両立。</strong>母集団形成からスクリーニングまで、最新ツールを駆使して効率化します。</li>
+            <li><strong>スポット支援から月額契約まで、貴社の課題に合わせた柔軟なプラン。</strong>「面接調整だけお願いしたい」「採用戦略から見てほしい」、どちらにも対応可能です。</li>
+          </ul>
+        </div>
+
+        <div class="modal-section">
+          <h3>支援できる業務</h3>
+          <ul class="modal-fit-list">
+            <li>採用戦略立案・KPI設計</li>
+            <li>求人媒体の選定・運用代行</li>
+            <li>求人原稿の作成・改善</li>
+            <li>スカウトメール送信・候補者対応</li>
+            <li>面接調整・日程管理</li>
+            <li>内定者フォロー・入社準備</li>
+            <li>採用レポーティング・改善提案</li>
+          </ul>
+        </div>
+
+        <div class="modal-section">
+          <h3>サービスの流れ</h3>
+          <ol class="modal-flow">
+            <li><strong>現状ヒアリング・課題整理</strong>採用フローのどこに詰まりがあるか、徹底分析。</li>
+            <li><strong>採用戦略・KPI設計</strong>目標から逆算した実行プランを設計します。</li>
+            <li><strong>実行プラン提案・契約</strong>必要な業務範囲を切り出し、最適なプランをご提案。</li>
+            <li><strong>運用スタート</strong>媒体運用・スカウト・面接調整など、合意した範囲で実行。</li>
+            <li><strong>週次／月次レポーティング</strong>数字と現場感の両面から改善提案を継続。</li>
+          </ol>
+        </div>
+
+        <div class="modal-section">
+          <h3>料金プラン</h3>
+          <div class="modal-price">
+            <ul>
+              <li><strong>スポット支援</strong>：業務単位（5万円〜）／ピンポイントでお試しから</li>
+              <li><strong>月額固定プラン</strong>：要相談／継続的な採用支援に</li>
+              <li><strong>成果報酬型</strong>：要相談／採用成功時の支払いに振り切ったプラン</li>
+            </ul>
+            <p style="margin-top: 12px; font-size: 13px; color: var(--text-lighter);">※ 貴社の採用規模・課題に応じて最適なプランをご提案します。</p>
+          </div>
+        </div>
+
+        <div class="modal-section">
+          <h3>こんな企業様におすすめ</h3>
+          <ul class="modal-fit-list">
+            <li>採用担当が不足している・1人で抱えている</li>
+            <li>採用戦略から見直したい</li>
+            <li>媒体運用や面接調整の工数を削減したい</li>
+            <li>採用ノウハウを社内に蓄積したい</li>
+            <li>地方拠点の採用に苦戦している</li>
+          </ul>
+        </div>
+
+        <div class="modal-cta">
+          <p class="modal-cta-text">採用課題の壁打ちから。お気軽にご相談ください。</p>
+          <a href="contact.html" class="btn-blue btn-large">
+            <span>無料の採用相談を申し込む</span>
+            <svg width="18" height="18" viewBox="0 0 18 18" fill="none"><path d="M4 9h10M10 5l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal-overlay" id="modal-event" role="dialog" aria-modal="true" aria-labelledby="modal-event-title">
+    <div class="modal-window">
+      <button type="button" class="modal-close" aria-label="閉じる">&times;</button>
+      <div class="modal-hero">
+        <img src="event-photo.jpg" alt="">
+        <div class="modal-hero-text">
+          <span class="modal-label">Service 03</span>
+          <h2 class="modal-title" id="modal-event-title">イベント</h2>
+        </div>
+      </div>
+      <div class="modal-content">
+        <p class="modal-lead">ひとつの「出会い」を、つぎの物語へ。<br>企業と人、地域と未来をつなぐ場を、私たちが創ります。</p>
+
+        <div class="modal-section">
+          <h3>琴線のイベント、3つの強み</h3>
+          <ul class="modal-strength-list">
+            <li><strong>企業×求職者、ビジネス×コミュニティ、地域×全国——あらゆる垣根を超える場づくり。</strong>「集める」のではなく「響かせる」企画設計を大切にしています。</li>
+            <li><strong>鳥取を起点に、現地ならではの体験を盛り込んだ企画力。</strong>砂丘・温泉・酒蔵・地酒など、鳥取の魅力を最大限に活かす演出が可能です。</li>
+            <li><strong>集客から運営、振り返りまで一気通貫でサポート。</strong>SNS・メルマガ・プレスリリースまで、参加者を集める仕組みもまるごと設計します。</li>
+          </ul>
+        </div>
+
+        <div class="modal-section">
+          <h3>提供できるイベント</h3>
+          <ul class="modal-fit-list">
+            <li>企業合同説明会・採用イベント</li>
+            <li>業界別交流会・勉強会</li>
+            <li>経営者・起業家コミュニティ運営</li>
+            <li>地域活性化イベント・地方創生プロジェクト</li>
+            <li>大規模カンファレンスの企画運営</li>
+            <li>社員向けのチームビルディング合宿</li>
+          </ul>
+        </div>
+
+        <div class="modal-section">
+          <h3>サービスの流れ</h3>
+          <ol class="modal-flow">
+            <li><strong>目的・ターゲットのヒアリング</strong>「誰に、何を、どう届けたいか」から一緒に考えます。</li>
+            <li><strong>企画立案・スケジューリング</strong>コンセプト設計から、当日のタイムテーブルまで設計。</li>
+            <li><strong>会場・登壇者・コンテンツの調整</strong>琴線のネットワークで、最適なキャストを集めます。</li>
+            <li><strong>集客・告知</strong>SNS・メルマガ・PRで、ターゲットに確実に届けます。</li>
+            <li><strong>当日運営・進行</strong>司会・受付・撮影・記録まで現場運営をフルサポート。</li>
+            <li><strong>振り返り・参加者フォロー</strong>アンケート分析・参加者との継続的な関係構築まで支援。</li>
+          </ol>
+        </div>
+
+        <div class="modal-section">
+          <h3>こんな方におすすめ</h3>
+          <ul class="modal-fit-list">
+            <li>採用と広報を同時に進めたい企業</li>
+            <li>ブランディング強化を狙う企業</li>
+            <li>地域とつながりたい・新しい挑戦をしたい方</li>
+            <li>社内では人手が足りず、外部にイベント運営を任せたい方</li>
+          </ul>
+        </div>
+
+        <div class="modal-cta">
+          <p class="modal-cta-text">企画の壁打ち・お見積もりはお気軽にご相談ください。</p>
+          <a href="contact.html" class="btn-blue btn-large">
+            <span>イベントについて相談する</span>
+            <svg width="18" height="18" viewBox="0 0 18 18" fill="none"><path d="M4 9h10M10 5l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
 
   <script src="script.js"></script>
 </body>

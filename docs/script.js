@@ -87,6 +87,54 @@ document.addEventListener('DOMContentLoaded', () => {
     }, 6000);
   }
 
+  // --- Service modals ---
+  const modalTriggers = document.querySelectorAll('[data-modal-trigger]');
+  const modals = document.querySelectorAll('.modal-overlay');
+  let lastFocused = null;
+
+  function openModal(id) {
+    const modal = document.getElementById(id);
+    if (!modal) return;
+    lastFocused = document.activeElement;
+    modal.classList.add('open');
+    document.body.classList.add('modal-open');
+    const closeBtn = modal.querySelector('.modal-close');
+    if (closeBtn) setTimeout(() => closeBtn.focus(), 50);
+  }
+
+  function closeAllModals() {
+    modals.forEach(m => m.classList.remove('open'));
+    document.body.classList.remove('modal-open');
+    if (lastFocused) lastFocused.focus();
+  }
+
+  modalTriggers.forEach(trigger => {
+    trigger.addEventListener('click', (e) => {
+      if (e.target.closest('a, button')) return;
+      const id = trigger.getAttribute('data-modal-trigger');
+      openModal(id);
+    });
+    trigger.addEventListener('keydown', (e) => {
+      if (e.key === 'Enter' || e.key === ' ') {
+        e.preventDefault();
+        const id = trigger.getAttribute('data-modal-trigger');
+        openModal(id);
+      }
+    });
+  });
+
+  modals.forEach(modal => {
+    modal.addEventListener('click', (e) => {
+      if (e.target === modal) closeAllModals();
+    });
+    const closeBtn = modal.querySelector('.modal-close');
+    if (closeBtn) closeBtn.addEventListener('click', closeAllModals);
+  });
+
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape') closeAllModals();
+  });
+
   // --- Contact form handling ---
   const contactForm = document.getElementById('contactForm');
   if (contactForm) {
